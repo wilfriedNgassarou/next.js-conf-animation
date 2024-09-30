@@ -1,0 +1,75 @@
+@keyframes x-axis {
+  from {
+    transform: translateX(var(--initial-conf-item-translate-x-value));
+  } 
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes y-axis {
+  0% {
+    transform: translateY(var(--initial-conf-item-translate-y-value));
+  }
+  
+  25% {
+    transform: translateY(var(--initial-conf-item-translate-y-value));
+  }
+  
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#app {
+  overflow: hidden;
+  height: 100dvh;
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.gray {
+  color: #6b7280;
+}
+
+.light-black {
+  color: #171717;
+}
+
+main {
+  margin-top: 30px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  
+  h3 {
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    color: hsla(0, 0%, 40% ,1);
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@import 'header' ;
+@import 'conf-container' ;
